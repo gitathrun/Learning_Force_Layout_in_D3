@@ -14,7 +14,20 @@
 </head>
 <body>
     <h1>Hello, D3-Force</h1>
-    <svg id="Target"></svg>
+    <svg id="Target">
+        <defs>
+            <marker id="markerArrow"
+                    markerWidth="7"
+                    markerHeight="7"
+                    refX="2"
+                    refY="2"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+            >
+                <path fill="gray" d="M0, 0 L0, 4 L4, 2 z" />
+            </marker>
+        </defs>
+    </svg>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js" integrity="sha512-F63QPFxQ27mn9COmkZhSirC1pBNeVJ7MJJs4wtK6XfiAaH3WM1SfX6Sv2Pme/499+hafP0dALVZOADw4W2r6eQ==" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
 </body>
